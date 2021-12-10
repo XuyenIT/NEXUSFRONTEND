@@ -1,0 +1,36 @@
+
+.card--product{
+    box-sizing: border-box;
+     
+}
+.card__image{
+    padding-top: 60%;
+    height: 100px;
+    background-size: contain;
+  
+}
+.card__title{
+    color: var(--price-color);
+    font-weight: 400;
+    font-size:22px;
+}
+.card__price{
+    color: var(--price-color);
+    text-align: center;
+    font-size:16px;
+}
+.card__description{
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+height: 40px;
+overflow: hidden;
+display: block;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+}
+.card__btn{
+    display: block;
+   margin: auto;
+}

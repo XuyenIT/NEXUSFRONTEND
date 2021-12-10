@@ -2,6 +2,8 @@
     --white-color:#fff;
     --black-color:#000;
     --text-color:#333;
+    --price-color:orange;
+    --card-title:orange;
 }
 *{
     box-sizing: inherit;
@@ -10,3 +12,4 @@ html{
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
+
