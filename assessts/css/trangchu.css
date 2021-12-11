@@ -1,0 +1,46 @@
+.article__news{
+    font-size: 20px;
+    background-color: var(--text-title);
+    font-weight: bold;
+     width: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-color: whitesmoke;
+    box-shadow: none;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.card--article{
+    box-sizing: border-box;
+    height: 400px;    
+    cursor: pointer;
+}
+
+.card__title{
+    color: var(--text-color);
+    font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+height: 100px;
+    overflow: hidden;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 5;
+;
+}
+.card__title:hover{
+    color: var(--card-title);
+    cursor: pointer;
+}
+
+.carousel-control-next-icon{
+    background-color: orange;
+    z-index: 0;
+}
+.carousel-control-prev-icon{
+    background-color: orange;
+}
+
+

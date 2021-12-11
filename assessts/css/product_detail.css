@@ -41,6 +41,7 @@ margin-bottom: 20px;
 }
 .product__quantity-input{
    width: 50px;
+   text-align: center;
 }
 .btn__quantity--increase{
     padding: 3px;

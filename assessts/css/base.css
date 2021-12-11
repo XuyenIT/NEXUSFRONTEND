@@ -4,6 +4,7 @@
     --text-color:#333;
     --price-color:orange;
     --card-title:orange;
+    --text-title:orange;
 }
 *{
     box-sizing: inherit;

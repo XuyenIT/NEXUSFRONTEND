@@ -1,19 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assessts/css/base.css">
-
+    <link rel="stylesheet" href="./assessts/css/product.css">
+    <link rel="stylesheet" href="./assessts/css/trangchu.css">
     <link rel="stylesheet" href="./assessts/fonts//fontawesome-free-5.15.4-web/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+<style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 50%;
+    }
+</style>
+
 <body>
-    
+<div class="container">
+    <div class="article">
+        <h3 class="article__news">News</h3>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <div class="card card--article">
+                            <div class="card__image" style="background-image: url(./assessts/images/article/hoang.jpg);">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card__title">Hot.Chủ tịch Trần Phạm Thanh Hoàng bỏ nghề IT sang nhật để tham gia vào ngành công nghiệp phim lớn nhất Japan</h6>
+                                <p class="card__description">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="card__btn btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <div class="card card--article">
+                            <div class="card__image" style="background-image: url(./assessts/images/article/xoamo.jpg);">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card__title">Phần mềm xóa vết mờ trong video của kỹ sư Hoàng đạt doanh thu kỷ lục</h5>
+                                <p class="card__description">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="card__btn btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <div class="card card--article">
+                            <div class="card__image" style="background-image: url(./assessts/images/article/TOKUDA.jpg);">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card__title">Ông Tokuda Phạm tham quan nhà máy và hợp tác cùng chủ tịch Hoàng cung cấp các dòng module đẹp và chất lượng nhất</h5>
+                                <p class="card__description">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="card__btn btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <div class="card card--article">
+                            <div class="card__image" style="background-image: url(./assessts/images/article/workshop.jpg);">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card__title">Workshop chia sẽ kinh nghiệm code JAV.a của leader Trần Phạm Thanh Hoàng</h5>
+                                <p class="card__description">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="card__btn btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-sm-4 col-md-3">
+                        <div class="card card--article">
+                            <div class="card__image" style="background-image: url(./assessts/images/article/hoang.jpg);">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card__title">Hot.Chủ tịch Trần Phạm Thanh Hoàng bỏ nghề IT sang nhật để tham gia vào ngành công nghiệp phim lớn nhất Japan</h6>
+                                <p class="card__description">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="card__btn btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <div class="card card--article">
+                            <div class="card__image" style="background-image: url(./assessts/images/article/xoamo.jpg);">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card__title">Phần mềm xóa vết mờ trong video của kỹ sư Hoàng đạt doanh thu kỷ lục</h5>
+                                <p class="card__description">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="card__btn btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <div class="card card--article">
+                            <div class="card__image" style="background-image: url(./assessts/images/article/TOKUDA.jpg);">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card__title">Ông Tokuda Phạm tham quan nhà máy và hợp tác cùng chủ tịch Hoàng cung cấp các dòng module đẹp và chất lượng nhất</h5>
+                                <p class="card__description">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="card__btn btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                        <div class="card card--article">
+                            <div class="card__image" style="background-image: url(./assessts/images/article/workshop.jpg);">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card__title">Workshop chia sẽ kinh nghiệm code JAV.a của leader Trần Phạm Thanh Hoàng</h5>
+                                <p class="card__description">Some quick example text to build on the card title and make
+                                    up the bulk of the
+                                    card's content.</p>
+                                <a href="#" class="card__btn btn btn-primary">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+
 </html>

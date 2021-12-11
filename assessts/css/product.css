@@ -6,6 +6,7 @@
 .card__image{
     padding-top: 60%;
     height: 100px;
+    /* background-repeat: no-repeat; */
     background-size: contain;
   
 }
