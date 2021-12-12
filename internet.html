@@ -26,17 +26,18 @@
     <link rel="stylesheet" href="./assessts/css/base.css">
     <link rel="stylesheet" href="./assessts/css/trangchu.css">
     <link rel="stylesheet" href="./assessts/css/internet.css">
+    <link rel="stylesheet" href="./assessts/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 
-<body>
+<body class="sub_page">
     <div class="hero_area">
         <!-- header section strats -->
         <header class="header_section">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
-                    <a class="navbar-brand" href="trangchu.html">
+                    <a class="navbar-brand" href="index.html">
                         <h3>
-                           NEXUS SERVICE
+                            NEXUS SERVICE
                         </h3>
                         <span> Top quanlity</span>
                     </a>
@@ -48,7 +49,7 @@
 
                     <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
                         <ul class="navbar-nav  ml-auto">
-                            <li class="nav-item active">
+                            <li class="nav-item ">
                                 <a class="nav-link" href="trangchu.html">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -56,25 +57,22 @@
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                  Services
+                                    Services
                                 </a>
                                 <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="#">Internet</a>
-                                  <a class="dropdown-item" href="#">Landline</a>
-                                  <a class="dropdown-item" href="#">DialUp</a>
+                                    <a class="dropdown-item" href="internet.html">Internet</a>
+                                    <a class="dropdown-item" href="landline.html">Landline</a>
+                                    <a class="dropdown-item" href="dialup.html">DialUp</a>
                                 </div>
-                              </li>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="product.html">Product</a>
+                                <a class="nav-link" href="product.html"> Product </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="login.html">Login</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="resetpass.html">Reset</a>
                             </li>
                         </ul>
                         <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
@@ -85,288 +83,524 @@
             </div>
         </header>
         <!-- end header section -->
-        <!-- slider section -->
-        <section class=" slider_section position-relative">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="detail-box">
-                                        <div>
-                                            <h1>
-                                                INTERNET
-                                            </h1>
-                                            <a href="">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+    </div>
+
+    <!-- Hourly basis -->
+
+    <div class="container">
+        <h3 class="internet__title">Internet service</h3>
+        <h4 class="internet__title-package">Hourly basis</h4>
+        <div class="row" id="ads">
+            <!-- Category Card -->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">Hot</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap4.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="detail-box">
-                                        <div>
-                                            <h1>
-                                                DIAL-UP
-                                            </h1>
-                                            <a href="">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="detail-box">
-                                        <div>
-                                            <h1>
-                                                LANDLINE
-                                            </h1>
-                                            <a href="">
-                                                Read More
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end slider section -->
-    </div> 
-
-    <!-- Internet service -->
-    
-        <div class="container">
-            <h3 class="internet__title">Internet service</h3>
-            <div class="row" id="ads">
-                <!-- Category Card -->
-                <div class="col-md-3">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Low KMS</span>
-                            <span class="card-notify-year">Hot</span>
-                            <div class="img-fluid card__image"
-                                style="background-image: url(./assessts/images/cap/cap4.jpg);"></div>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>SUPER I80</h5>
-                            </div>
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Download/Upload</span>
-                            <span class="card-detail-badge">80Mbps</span>
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">182.000$/Tháng</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <a class="ad-btn" href="#">View</a>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap4.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Low KMS</span>
-                            <span class="card-notify-year">2018</span>
-                            <div class="img-fluid card__image"
-                                style="background-image: url(./assessts/images/cap/cap4.jpg);"></div>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>SUPER I80</h5>
-                            </div>
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Download/Upload</span>
-                            <span class="card-detail-badge">80Mbps</span>
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">182.000$/Tháng</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <a class="ad-btn" href="#">View</a>
-                        </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Low KMS</span>
-                            <span class="card-notify-year">2018</span>
-                            <div class="img-fluid card__image"
-                                style="background-image: url(./assessts/images/cap/cap2.jpg);"></div>
-                        </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>SUPER I80</h5>
-                            </div>
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Download/Upload</span>
-                            <span class="card-detail-badge">80Mbps</span>
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">182.000$/Tháng</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <a class="ad-btn" href="#">View</a>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap2.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
                         </div>
                     </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card rounded">
-                        <div class="card-image">
-                            <span class="card-notify-badge">Low KMS</span>
-                            <span class="card-notify-year">2018</span>
-                            <div class="img-fluid card__image"
-                                style="background-image: url(./assessts/images/cap/cap2.jpg);"></div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap2.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
                         </div>
-                        <div class="card-body text-center">
-                            <div class="ad-title m-auto">
-                                <h5>SUPER I80</h5>
-                            </div>
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">Download/Upload</span>
-                            <span class="card-detail-badge">80Mbps</span>
-                        </div>
-                        <div class="card-image-overlay m-auto">
-                            <span class="card-detail-badge">182.000$/Tháng</span>
-                        </div>
-                        <div class="card-body text-center">
-                            <a class="ad-btn" href="#">View</a>
-                        </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- info section -->
-        <section class="info_section layout_padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="info_menu">
-                            <h5>
-                                QUICK LINKS
-                            </h5>
-                            <ul class="navbar-nav  ">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home <span
-                                            class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="about.html"> About </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="internet.html"> Internet </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="internet.html"> Lanline </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="internet.html"> Dialup </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="product.html"> Product </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact us</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="login.html">Login</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="info_course">
-                            <h5>
-                                TOP RATED SERVICES
-                            </h5>
-                            <p>
-                                Customer is god, quality is priority, Nexus always listens, always understands
-                            </p>
-                        </div>
-                    </div>
+    </div>
+    <!--No Limit 64Kbps -->
 
-                    <div class="col-md-5 offset-md-1">
-                        <div class="info_news">
-                            <h5>
-                                FOR ANY QUERY, PLEASE WRITE TO US
-                            </h5>
-                            <div class="info_contact">
-                                <a href="">
-                                    Location
-                                </a>
-                                <a href="">
-                                    nexus_system@gmail.com
-                                </a>
-                                <a href="">
-                                    Call : +01 1234567890
-                                </a>
-                            </div>
-                            <form action="">
-                                <input type="text" placeholder="Enter Your email" />
-                                <button>
-                                    Subscribe
-                                </button>
-                            </form>
+    <div class="container">
+        <h4 class="internet__title-package">No Limit 64Kbps</h4>
+        <div class="row" id="ads">
+            <!-- Category Card -->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">Hot</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap4.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
                         </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap4.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
+                        </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap2.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
+                        </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap2.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
+                        </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--No Limit 128 Kbps -->
 
-        <!-- end info section -->
+    <div class="container">
+        <h4 class="internet__title-package">No Limit 128 Kbps</h4>
+        <div class="row" id="ads">
+            <!-- Category Card -->
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">Hot</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap4.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
+                        </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap4.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
+                        </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap2.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
+                        </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card rounded">
+                    <div class="card-image">
+                        <span class="card-notify-badge">Low KMS</span>
+                        <span class="card-notify-year">2018</span>
+                        <div class="img-fluid card__image"
+                            style="background-image: url(./assessts/images/cap/cap2.jpg);"></div>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="ad-title m-auto">
+                            <h5>SUPER I80</h5>
+                        </div>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">Download/Upload</span>
+                        <span class="card-detail-badge">80Mbps</span>
+                    </div>
+                    <div class="card-image-overlay m-auto">
+                        <span class="card-detail-badge">182.000$/Tháng</span>
+                    </div>
+                    <div class="card-body text-center">
+                        <a class="ad-btn" href="#">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature -->
+    <div class="container feature__benefit">
 
-        <!-- footer section -->
-        <footer class="container-fluid footer_section">
-            <p>
-                &copy; 2021 All Rights Reserved By
-                <a href="https://html.design/">Group 3</a>
-            </p>
+        <div class="row">
+                <div class="col-sm-6">
+                    <h5> <i class="far fa-thumbs-up thumbs-up--icon"></i> Những ưu điểm của dịch vụ FTTH do Nexus mang
+                        lại bao gồm:</h5>
+                    <ul class="feature__internet feature__internet--left">
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f1.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f1.png"></div>
 
-        </footer>
+                            <div class="col-xs-10 col-sm-11">Tốc độ truy cập Internet cao, lên đến 1Gigabit/giây (1Gbps)
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f5.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f5.png"></div>
+
+                            <div class="col-xs-10 col-sm-11">Đăng ký dễ dàng, tiện lợi qua tổng đài, trên website trực
+                                tuyến
+                                hoặc tại hệ thống các văn phòng giao dịch của FPT Telecom trải dài trên toàn quốc</div>
+                        </li>
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f2.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f2.png"></div>
+
+                            <div class="col-xs-10 col-sm-11">Chất lượng tín hiệu ổn định, không bị ảnh hưởng bởi thời
+                                tiết,
+                                chiều dài cáp…</div>
+                        </li>
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f6.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f6.png"></div>
+
+                            <div class="col-xs-10 col-sm-11">Thời gian lắp đặt dịch vụ nhanh chóng, tối đa là 3-5 ngày
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul class="feature__internet feature__internet--right ">
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f3.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f3.png"></div>
+
+                            <div class="col-xs-10 col-sm-11">Thiết bị an toàn (không sợ sét đánh lan truyền trên đường
+                                dây)
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f7.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f7.png"></div>
+
+                            <div class="col-xs-10 col-sm-11">Quản lý cước rõ ràng</div>
+                        </li>
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f4.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f4.png"></div>
+
+                            <div class="col-xs-10 col-sm-11">Đáp ứng hiệu quả cho các ứng dụng Công nghệ thông tin hiện
+                                đại
+                                như: Hosting Server riêng, VPN (mạng riêng ảo), Truyền dữ liệu, Game Online, IPTV
+                                (truyền
+                                hình tương tác), VoD (xem phim theo yêu cầu), Video Conferrence (hội nghị truyền hình),
+                                IP
+                                Camera,…</div>
+                        </li>
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f8.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f8.png"></div>
+
+                            <div class="col-xs-10 col-sm-11">Chăm sóc và hỗ trợ giải đáp khách hàng 24/7</div>
+                        </li>
+                        <li>
+                            <div class="col-xs-2 col-sm-1 fix-pad"><img alt="FTTH-f9.png"
+                                    src="https://fpt.vn/storage/upload/images/services/ftth/FTTH-f9.png"></div>
+
+                            <div class="col-xs-10 col-sm-11">Dễ dàng nâng cấp băng thông mà không cần kéo cáp mới</div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
 
 
-        <footer class="container-fluid footer_section">
+    </div>
+    <!-- info section -->
+    <section class="info_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info_menu">
+                        <h5>
+                            QUICK LINKS
+                        </h5>
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"> About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="internet.html"> Internet </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="internet.html"> Lanline </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="internet.html"> Dialup </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html"> Product </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info_course">
+                        <h5>
+                            TOP RATED SERVICES
+                        </h5>
+                        <p>
+                            Customer is god, quality is priority, Nexus always listens, always understands
+                        </p>
+                    </div>
+                </div>
 
-            <p>
-                Distributed By
-                <a href="https://themewagon.com/">Hoang Tokuda</a>
-            </p>
+                <div class="col-md-5 offset-md-1">
+                    <div class="info_news">
+                        <h5>
+                            FOR ANY QUERY, PLEASE WRITE TO US
+                        </h5>
+                        <div class="info_contact">
+                            <a href="">
+                                Location
+                            </a>
+                            <a href="">
+                                nexus_system@gmail.com
+                            </a>
+                            <a href="">
+                                Call : +01 1234567890
+                            </a>
+                        </div>
+                        <form action="">
+                            <input type="text" placeholder="Enter Your email" />
+                            <button>
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        </footer>
+    <!-- end info section -->
 
-        <!-- footer section -->
+    <!-- footer section -->
+    <footer class="container-fluid footer_section">
+        <p>
+            &copy; 2021 All Rights Reserved By
+            <a href="https://html.design/">Group 3</a>
+        </p>
 
-        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.js"></script>
+    </footer>
+
+
+    <footer class="container-fluid footer_section">
+
+        <p>
+            Distributed By
+            <a href="https://themewagon.com/">Hoang Tokuda</a>
+        </p>
+
+    </footer>
+
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
 </body>
 
 </html>
-

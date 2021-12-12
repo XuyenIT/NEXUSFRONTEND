@@ -925,6 +925,15 @@ a:focus {
 .footer_section a {
   color: #787878;
 }
+.dropdown-menu a{
+  color: black;
+  font-size: 18px;
+}
+.dropdown-menu a:hover{
+  background-color: orange;
+  color: white;
+  font-size: 18px;
+}
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
