@@ -14,8 +14,9 @@
     align-items: center;
     justify-content: space-between;
 }
-.col{
-    flex-basis: 45%;
+.product__image--small{
+    width: 100%;
+    padding: 5px;
 }
 .slider{
     height: 80vh;
@@ -35,6 +36,8 @@
 
 .preview img{
     height: 100%;
+    padding: 10px;
+    width: 100%;
 }
 p{
     margin-bottom: 20px;
@@ -98,6 +101,7 @@ button .fa{
 }
 .items img{
     width: 100%;
+    height: 200px;
 }
 .details{
     margin-top: 20px;
@@ -109,6 +113,16 @@ button .fa{
 .details .rating{
     margin: 10px 0;
 }
+.product__quantity{
+    display: flex;
+    margin-bottom: 20px;
+    
+    }
+    .product__quantity-input{
+       width: 50px;
+       text-align: center;
+       margin: 0 3px;
+    }
 
 
 

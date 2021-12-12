@@ -96,8 +96,18 @@
 #ads .ad-title h5 {
         text-transform: uppercase;
         font-size: 18px;
-        background-color: orange;
+        background-color: #b5caee;
         width: 100%;
         padding: 10px;
         border-radius: 20px;
+    }
+    .internet__title{
+        width: 100%;
+        background-color: var(--blue);
+        padding: 35px;
+        border-radius: 30px;
+        text-align: center;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
     }
