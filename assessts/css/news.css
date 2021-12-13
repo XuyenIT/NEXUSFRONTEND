@@ -1,0 +1,19 @@
+.card__title--product{
+font-size: 18px;
+overflow: hidden;
+    display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 4;
+}
+.card__title--product:hover{
+color: orange;
+}
+.card__news:hover{
+cursor: pointer;
+transition: 0.2s ease-in-out;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.btn-news{
+    display: block;
+    margin: auto;
+}

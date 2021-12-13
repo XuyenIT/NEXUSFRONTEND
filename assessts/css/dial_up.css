@@ -101,7 +101,7 @@
         padding: 10px;
         border-radius: 20px;
     }
-    .internet__title{
+    .dial-up_title{
         width: 100%;
         background-color: var(--blue);
         padding: 35px;
@@ -111,7 +111,7 @@
         margin: auto;
         margin-top: 20px;
     }
-    .internet__title-package{
+    .dial-up_title-package{
         width: 300px;
         border: 2px solid orange;
         margin-top: 20px;
@@ -119,32 +119,3 @@
         border-radius: 10px;
         text-align: center;
     }
-    .feature__internet{
-        list-style-type: none;
-    }
-    .feature__internet--left li{
-        padding-bottom: 45px;
-        font-size: 16px;
-    }
-    .feature__internet--right{
-        margin-top: 60px;
-    }
-    .feature__internet--right li{
-        margin-bottom: 20px;
-        font-size: 16px;
-        z-index: 2;
-    }
-    .thumbs-up--icon{
-        font-size: 50px;
-        color: orange;
-    }
-
-    .feature__benefit{
-        height: 110vh;
-        background-color: #b5caee;
-        background-image: url(/assessts/images/background/hero-bg.jpg);
-        background-size: cover;
-        margin-bottom: 20px;
-        padding: 10px;
-        
-      }
