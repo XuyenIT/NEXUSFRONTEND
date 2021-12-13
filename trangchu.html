@@ -27,9 +27,36 @@
     <link rel="stylesheet" href="./assessts/css/product.css">
     <link rel="stylesheet" href="./assessts/css/trangchu.css">
     <link rel="stylesheet" href="./assessts/css/internet.css">
+    <link rel="stylesheet" href="./assessts/css/news.css">
+    <link rel="stylesheet" href="./assessts/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 
 <body>
+    <!-- Modal Cart -->
+
+    <div class="modal fade" id="card" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Your Card</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-card">
+
+                        <div><span style="color: red;font-weight: bold;" class="total-card"></span></div>
+                    </table>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="hero_area">
         <!-- header section strats -->
         <header class="header_section">
@@ -75,12 +102,17 @@
                                 <a class="nav-link" href="login.html">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="resetpass.html">Reset</a>
+                                <div data-toggle="modal" data-target="#card" data-backdrop="static">
+                                    <i class="fas fa-shopping-cart cart__icon"><i
+                                            class="fas fa-certificate certificate__icon">
+                                            <span class="total-count"
+                                                style="font-weight: bold; font-size: 20px;position: absolute;"></span>
+                                        </i></i>
+
+                                </div>
+
                             </li>
                         </ul>
-                        <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
-                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
-                        </form>
                     </div>
                 </nav>
             </div>
@@ -481,173 +513,128 @@
             </div>
         </div>
     </div>
-    <!-- News -->
-    <div>
-        <div class="container">
-            <div class="article">
-                <h3 class="article__news">News</h3>
-            </div>
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm-4 col-md-3">
-                                <div class="card card--article">
-                                    <div class="card__image"
-                                        style="background-image: url(./assessts/images/article/hoang.jpg);">
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card__title">Hot.Chủ tịch Trần Phạm Thanh Hoàng bỏ nghề IT sang
-                                            nhật để tham gia vào ngành công nghiệp phim lớn nhất Japan</h6>
-                                        <p class="card__description">Some quick example text to build on the card
-                                            title and make
-                                            up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="card__btn btn btn-primary">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-md-3">
-                                <div class="card card--article">
-                                    <div class="card__image"
-                                        style="background-image: url(./assessts/images/article/xoamo.jpg);">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card__title">Phần mềm xóa vết mờ trong video của kỹ sư Hoàng đạt
-                                            doanh thu kỷ lục</h5>
-                                        <p class="card__description">Some quick example text to build on the card
-                                            title and make
-                                            up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="card__btn btn btn-primary">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-md-3">
-                                <div class="card card--article">
-                                    <div class="card__image"
-                                        style="background-image: url(./assessts/images/article/TOKUDA.jpg);">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card__title">Ông Tokuda Phạm tham quan nhà máy và hợp tác cùng
-                                            chủ tịch Hoàng cung cấp các dòng module đẹp và chất lượng nhất</h5>
-                                        <p class="card__description">Some quick example text to build on the card
-                                            title and make
-                                            up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="card__btn btn btn-primary">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-md-3">
-                                <div class="card card--article">
-                                    <div class="card__image"
-                                        style="background-image: url(./assessts/images/article/workshop.jpg);">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card__title">Workshop chia sẽ kinh nghiệm code JAV.a của leader
-                                            Trần Phạm Thanh Hoàng</h5>
-                                        <p class="card__description">Some quick example text to build on the card
-                                            title and make
-                                            up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="card__btn btn btn-primary">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
+    <!-- Product -->
+    <div class="container">
+        <h3 class="article__news">Products</h3>
+        <div class="row">
+            
+            <div class="col-lg-3 mb-4">
+                <div class="card card__product">
+                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-title--product">Sunset</h5>
+                        <h5 class="card-price">10$</h5>
+                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
+                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                        <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm-4 col-md-3">
-                                <div class="card card--article">
-                                    <div class="card__image"
-                                        style="background-image: url(./assessts/images/article/hoang.jpg);">
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card__title">Hot.Chủ tịch Trần Phạm Thanh Hoàng bỏ nghề IT sang
-                                            nhật để tham gia vào ngành công nghiệp phim lớn nhất Japan</h6>
-                                        <p class="card__description">Some quick example text to build on the card
-                                            title and make
-                                            up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="card__btn btn btn-primary">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-md-3">
-                                <div class="card card--article">
-                                    <div class="card__image"
-                                        style="background-image: url(./assessts/images/article/xoamo.jpg);">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card__title">Phần mềm xóa vết mờ trong video của kỹ sư Hoàng đạt
-                                            doanh thu kỷ lục</h5>
-                                        <p class="card__description">Some quick example text to build on the card
-                                            title and make
-                                            up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="card__btn btn btn-primary">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-md-3">
-                                <div class="card card--article">
-                                    <div class="card__image"
-                                        style="background-image: url(./assessts/images/article/TOKUDA.jpg);">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card__title">Ông Tokuda Phạm tham quan nhà máy và hợp tác cùng
-                                            chủ tịch Hoàng cung cấp các dòng module đẹp và chất lượng nhất</h5>
-                                        <p class="card__description">Some quick example text to build on the card
-                                            title and make
-                                            up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="card__btn btn btn-primary">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-md-3">
-                                <div class="card card--article">
-                                    <div class="card__image"
-                                        style="background-image: url(./assessts/images/article/workshop.jpg);">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card__title">Workshop chia sẽ kinh nghiệm code JAV.a của leader
-                                            Trần Phạm Thanh Hoàng</h5>
-                                        <p class="card__description">Some quick example text to build on the card
-                                            title and make
-                                            up the bulk of the
-                                            card's content.</p>
-                                        <a href="#" class="card__btn btn btn-primary">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card card__product">
+                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-title--product">Sunset</h5>
+                        <h5 class="card-price">10$</h5>
+                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
+                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                        <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card card__product">
+                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-title--product">Sunset</h5>
+                        <h5 class="card-price">10$</h5>
+                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
+                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                        <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card card__product">
+                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title card-title--product">Sunset</h5>
+                        <h5 class="card-price">10$</h5>
+                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
+                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                        <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+                        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-
+    <!-- News -->
+    <div class="container">
+        <h3 class="article__news">News</h3>
+        <div class="row">
+            
+            <div class="col-lg-3 mb-4">
+                <div class="card card__news">
+                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text card__title--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum</p>
+                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
+                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                        <a href="" class="btn btn-success btn-news">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card card__news">
+                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text card__title--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum</p>
+                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
+                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                        <a href="" class="btn btn-success btn-news">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card card__news">
+                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text card__title--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum</p>
+                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
+                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                        <a href="" class="btn btn-success btn-news">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4">
+                <div class="card card__news">
+                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text card__title--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum</p>
+                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
+                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+                        <a href="" class="btn btn-success btn-news">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- info section -->
     <section class="info_section layout_padding">
@@ -753,6 +740,9 @@
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script>
+        let 
+    </script>
 
 </body>
 

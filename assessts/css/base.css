@@ -13,4 +13,21 @@ html{
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: border-box;
 }
+.cart__icon{
+    font-size: 35px;
+    color: orange;
+    position: relative;
+    top: 35px;
+    padding: 4px;
+}
+.cart__icon:hover{
+    font-size: 35px;
+    cursor: pointer;
+}
+.certificate__icon{
+    margin-top: -15px;
+    position: absolute;
+    margin-left: -10px;
+    color: #e6de08;
+}
 
