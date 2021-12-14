@@ -28,35 +28,12 @@
     <link rel="stylesheet" href="./assessts/css/trangchu.css">
     <link rel="stylesheet" href="./assessts/css/internet.css">
     <link rel="stylesheet" href="./assessts/css/news.css">
+    <link rel="stylesheet" href="./assessts/css/modal.css">
     <link rel="stylesheet" href="./assessts/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
 </head>
 
 <body>
-    <!-- Modal Cart -->
 
-    <div class="modal fade" id="card" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Your Card</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <table class="show-card">
-
-                        <div><span style="color: red;font-weight: bold;" class="total-card"></span></div>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Order Now</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="hero_area">
         <!-- header section strats -->
         <header class="header_section">
@@ -117,65 +94,71 @@
                 </nav>
             </div>
         </header>
+
+
+
         <!-- end header section -->
-        <!-- slider section -->
-        <section class=" slider_section position-relative">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="detail-box">
-                                        <div>
-                                            <h1>
-                                                INTERNET
-                                            </h1>
-                                            <a href="">
-                                                Read More
-                                            </a>
-                                        </div>
+
+        <!-- Modal Cart -->
+
+
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="detail-box">
+                                    <div>
+                                        <h1>
+                                            INTERNET
+                                        </h1>
+                                        <a href="">
+                                            Read More
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="detail-box">
-                                        <div>
-                                            <h1>
-                                                DIAL-UP
-                                            </h1>
-                                            <a href="">
-                                                Read More
-                                            </a>
-                                        </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="detail-box">
+                                    <div>
+                                        <h1>
+                                            DIAL-UP
+                                        </h1>
+                                        <a href="">
+                                            Read More
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item ">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="detail-box">
-                                        <div>
-                                            <h1>
-                                                LANDLINE
-                                            </h1>
-                                            <a href="">
-                                                Read More
-                                            </a>
-                                        </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="detail-box">
+                                    <div>
+                                        <h1>
+                                            LANDLINE
+                                        </h1>
+                                        <a href="">
+                                            Read More
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -183,9 +166,39 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end slider section -->
+        </div>
+    </section>
+    <!-- end slider section -->
     </div>
+<div class="container">
+<div class="row">
+   <div class="col-sm-12">
+    <div class="modal fade" id="card" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content"  style="width: 600px;">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-card table">
+      
+                    </table>
+              
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+</div>
+</div>
 
     <!-- Internet service -->
 
@@ -516,76 +529,8 @@
     <!-- Product -->
     <div class="container">
         <h3 class="article__news">Products</h3>
-        <div class="row">
+        <div class="main__card--product row">
 
-            <div class="col-lg-3 mb-4">
-                <div class="card card__product">
-                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title card-title--product">Sunset</h5>
-                        <h5 class="card-price">10$</h5>
-                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
-                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                        <div style="display: flex;">
-                            <a style="margin: auto;" href="product_detail.html"
-                                class="btn btn-outline-success btn-sm">Read More</a>
-                            <a style="margin: auto;" href="" class="btn btn-outline-success btn-sm">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-4">
-                <div class="card card__product">
-                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title card-title--product">Sunset</h5>
-                        <h5 class="card-price">10$</h5>
-                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
-                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                        <div style="display: flex;">
-                            <a style="margin: auto;" href="product_detail.html"
-                                class="btn btn-outline-success btn-sm">Read More</a>
-                            <a style="margin: auto;" href="" class="btn btn-outline-success btn-sm">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-4">
-                <div class="card card__product">
-                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title card-title--product">Sunset</h5>
-                        <h5 class="card-price">10$</h5>
-                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
-                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                        <div style="display: flex;">
-                            <a style="margin: auto;" href="product_detail.html"
-                                class="btn btn-outline-success btn-sm">Read More</a>
-                            <a style="margin: auto;" href="" class="btn btn-outline-success btn-sm">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 mb-4">
-                <div class="card card__product">
-                    <img src="./assessts/images/cap/cap3.jpg" alt="" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title card-title--product">Sunset</h5>
-                        <h5 class="card-price">10$</h5>
-                        <p class="card-text card__description--product">Lorem ipsum dolor sit amet consectetur,
-                            adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo
-                            tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
-                        <div style="display: flex;">
-                            <a style="margin: auto;" href="product_detail.html"
-                                class="btn btn-outline-success btn-sm">Read More</a>
-                            <a style="margin: auto;" href="" class="btn btn-outline-success btn-sm">Add to cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     <!-- News -->
@@ -752,8 +697,9 @@
 
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="./assessts/js/cart.js"></script>
     <script>
-       
+
     </script>
 
 </body>
